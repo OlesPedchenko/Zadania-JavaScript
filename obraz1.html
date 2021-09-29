@@ -1,0 +1,53 @@
+<html>
+ <head>
+ <script type="text/javascript">
+ function okno_zamknij_pedchenko() 
+ {
+ window.close()
+ }
+ function WinOpen_pedchenko_ob1() 
+ {
+window.open("ob1.html","okienko1.1","toolbar=no,directories=no,menubar=no,height=200,width=160,top=100,left=200");
+ } 
+ function WinOpen_pedchenko_ob2() 
+ {
+window.open("ob2.html","okienko1.2","toolbar=no,directories=no,menubar=no,height=200,width=160,top=400,left=200");
+ } 
+ function WinOpen_pedchenko_ob3() 
+ {
+window.open("ob3.html","okienko1.3","toolbar=no,directories=no,menubar=no,height=200,width=160,top=100,left=1000");
+ } 
+ function WinOpen_pedchenko_ob4() 
+ {
+window.open("ob4.html","okienko1.4","toolbar=no,directories=no,menubar=no,height=200,width=160,top=400,left=1000");
+ } 
+ </script>
+ </head>
+<body>
+<table>
+<tr>
+<td>
+		<form>
+ 	    <input type="button" name="przycisk1" value="Obraz1" onclick="WinOpen_pedchenko_ob1(' ')">
+ 	    </form>
+</td>
+<td>
+		<form>
+ 	    <input type="button" name="przycisk2" value="Obraz2" onclick="WinOpen_pedchenko_ob2(' ')">
+ 	    </form>
+</td>
+<td>
+		<form>
+ 	    <input type="button" name="przycisk3" value="Obraz3" onclick="WinOpen_pedchenko_ob3(' ')">
+ 	    </form>
+</td>
+<td>
+		<form>
+ 	    <input type="button" name="przycisk4" value="Obraz4" onclick="WinOpen_pedchenko_ob4(' ')">
+ 	    </form>
+</td>
+</tr>
+</table>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()"/>
+</body>
+</html>

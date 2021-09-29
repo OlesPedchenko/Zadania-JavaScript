@@ -1,0 +1,24 @@
+<html>
+<head>
+<script type="text/javascript">
+function show_prompt()
+{
+var name=prompt("Napisz imię","Imię Nazwisko");
+if (name!=null && name!="")
+{
+document.write("Witaj " + name + "! jak się masz?");
+document.write('<input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()">');
+}
+}
+function okno_zamknij_pedchenko() 
+ {
+ window.close()
+ }
+</script>
+</head>
+<body>
+<input type="button" onclick="show_prompt()" value="Pokaż prompt box">
+<br/>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()">
+</body>
+</html>

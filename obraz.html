@@ -1,0 +1,40 @@
+<html>
+ <head>
+ <script type="text/javascript">
+ function okno_zamknij_pedchenko() 
+ {
+ window.close()
+ }
+ </script>
+ </head>
+<body>
+<h3 style="text-align:center">Teoria</h3>
+ <p>
+ Język programowania JavaScript powstał w roku 1995. JavaScript umożliwia wdrożenie na stronie internetowej skomplikowanych elementów, dzięki którym strona ta może nie tylko wyświetlać statyczne informacje, ale również obsługiwać zmianę treść odpowiednio do sytuacji, wyświetlać interaktywne mapy i animacje grafiki 2D/3D , wyświetlać video itd. JavaScript działa po stronie klienta. Jest bezpiecznym narzędziem, bo nie zapewnia dostępu niskiego poziomu do pamięci ani procesora, ponieważ został pierwotnie stworzony dla przeglądarek, które go nie wymagają. JavaScript to język obiektowy, bo ma 4 filary programowania zorientowanego obiektowo: enkapsulację, abstrakcję, dziedziczenie oraz polimorfizm.
+ </p>
+<h3 style="text-align:center">Kody i wytłumaczenia</h3>
+ <p>
+ 'input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"':<br>
+ Dane zostają wysyłane na serwer metodą button. Nazwa okna, nazwa przyciska. Przy naciskaniu wypełnia się funkcja WinOpen.
+ </p>
+ <p>
+window.open ("obraz.html", "okienko", "toolbar=no, directories=no, menubar=no, height=280, width=160, top=200, left=200");:<br>
+Otworzyć okno o adresu obraz.html z następnymi parametrami:<br>
+toolbar=no - aby nie wyświetlic pasek narzędzi przeglądarki,
+directories=no - nie należy dodać przyciski katalogów,
+menubar=no - aby nie wyświetlić pasek menu,
+height=280- wysokość okna,
+width=160 - szerokość okna,
+top=200 - górna pozycja okna,
+left=200 - lewa pozycja okna.
+ </p>
+ <p>
+ window.close():<br>
+zamknącz okno
+ </p>
+ <p>
+ <img src="obraz1.gif" style="width:100%">
+ </p>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()"/>
+</body>
+</html>
