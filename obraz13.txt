@@ -1,0 +1,20 @@
+<html>
+<head>
+ <script type="text/javascript">
+function okno_zamknij_pedchenko() 
+ {
+ window.close()
+ }
+</script>
+</head>
+<body>
+<div style="color:green;font-size:41px;">
+<script language="JavaScript">
+var a=prompt("Podaj pirwsz¹ liczbê","A=");
+var b=prompt("Podaj drug¹ liczbê","B=");
+document.write("(",a,"+",b,")^3 = ",a,"^3"," + ","3*((",a,")^2)*(",b,") + ","3*((",a,")*((",b,")^2)"," + ",b,"^3 = ",(a**3),"+",(3*((a**2)*b)),"+",(3*(a*(b**2))),"+",(b**3)," = ",(a**3)+(3*((a**2)*b))+(3*(a*(b**2)))+(b**3));
+document.write('<br/><input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()">');
+</script>
+</div>
+</body>
+</html>
