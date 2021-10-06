@@ -1,0 +1,45 @@
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij_pedchenko() 
+ {
+ window.close()
+ }
+</script>
+</head>
+<body>
+<textarea cols="100%" rows="28%">
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij_pedchenko() 
+ {
+ window.close()
+ }
+</script>
+</head>
+<body>
+<div style="color:green;font-size:41px;">
+<script language="JavaScript">
+var in_x1=prompt("Podaj liczbe x1:","1");
+var in_x2=prompt("Podaj liczbe x2:","2");
+var x1=parseFloat(in_x1);
+var x2=parseFloat(in_x2);
+var y1_ped= 3*Math.pow(x1, (4 / (4 + 2)));
+var y2_ped= (2 * Math.cos(x1 * Math.PI / 180)) + (2 * Math.sin(x1 * Math.PI / 180));
+var y3_ped=Math.cbrt(Math.pow(x1,5) + (2 * Math.pow(x2, 4)));
+var y4_ped= Math.abs(x1 - x2);
+var y5_ped= y3_ped * y4_ped;
+document.write("Wczytane liczby: ",'<br>',"x1=", x1," [stopniach],   x1=",(x1 * Math.PI / 180).toFixed(5)," [radianach]",'<br>', "x2=",x2," [stopniach], x2=",(x2 * Math.PI / 180).toFixed(5)," [radianach]",'<br>');
+document.write("y1=",y1_ped.toFixed(2),'<br>');
+document.write("y2=",y2_ped.toFixed(2),'<br>');
+document.write("y3=",y5_ped.toFixed(2));
+</script>
+</div>
+</body>
+</html>
+</textarea>
+<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()">
+</body>
+</html>

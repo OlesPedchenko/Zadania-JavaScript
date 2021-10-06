@@ -1,0 +1,84 @@
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij_pedchenko() 
+ {
+ window.close()
+ }
+</script>
+</head>
+<body>
+<textarea cols="100%" rows="28%">
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij_pedchenko() 
+ {
+ window.close()
+ }
+</script>
+</head>
+<body>
+<div style="color:green;font-size:41px;">
+<script language="JavaScript">
+var D1_ped=prompt("Dzień 1=","");
+var G1_ped=prompt("Godzina 1=","");
+var D2_ped=prompt("Dzień 2=","");
+var G2_ped=prompt("Godzina 2=","");
+var D1_ped=parseFloat(D1_ped);
+var D2_ped=parseFloat(D2_ped);
+var G1_ped=parseFloat(G1_ped);
+var G2_ped=parseFloat(G2_ped);
+var sek1, sek2;
+if (D1_ped!=D2_ped)
+{
+sek1=(D1_ped-D2_ped);
+	if (sek1<0)
+	{
+	sek1=(-sek1)-1;
+		if (D1_ped<D2_ped)
+		{
+		sek1=sek1*24*60*60;
+		sek2=(24-G1_ped+G2_ped)*60*60;
+		sek1=sek1+sek2;
+		}
+		else
+		{
+		sek1=sek1*24*60*60;
+		sek1=sek1+(((24-G2_ped)+G1_ped)*60*60);
+		}
+	}
+	else
+	{
+	sek1=sek1-1;
+		if (D1_ped<D2_ped)
+		{
+		sek1=sek1*24*60*60;
+		sek1=sek1+(((24-G1_ped)+G2_ped)*60*60);
+		}
+		else
+		{
+		sek1=sek1*24*60*60;
+		sek1=sek1+(((24-G2_ped)+G1_ped)*60*60);
+		}
+	}
+}
+else
+{
+sek1=(G1_ped-G2_ped)*60*60;
+}
+if (sek1<0)
+{
+sek1=-sek1
+}
+document.write(sek1+" sekund minęło między "+G1_ped+" godziną "+D1_ped+" dnia stycznia"+" i "+G2_ped+" godziną "+D2_ped+" dnia stycznia");
+document.write('<br/><input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()">');
+</script>
+</div>
+</body>
+</html>
+</textarea>
+<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()">
+</body>
+</html>

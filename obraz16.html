@@ -1,0 +1,104 @@
+<html>
+ <head>
+ <title>Zadanie 16</title>
+ <style>
+table, th, td {
+	 border: 0.5px solid black;
+	 border-collapse: collapse;
+	 }
+ </style>
+ <script type="text/javascript">
+ function okno_zamknij_pedchenko() 
+ {
+ window.close()
+ }
+ </script>
+ </head>
+<body>
+<h3>Cztery sposoby <u>wyprowadzania</u> danych na stronę:</h3>
+ <p>
+ <ol>
+ <li>
+z użyciem dokument.write()
+ </li>
+ <li>
+z użyciem okienka alert()
+ </li>
+ <li>
+do okienek formularza
+ </li>
+ <li>
+do tabeli
+ </li>
+ </ol>
+ </p>
+<h3>Co to jest funkcja?</h3>
+<p>
+ <ol>
+ <li>
+Jest to zbiór zgrupowanych instrukcji, które możemy uruchamiać poprzez podanie ich nazwy,
+ </li>
+ <li>
+Każda funkcja po wywołaniu wykonuje swój wewnętrzny kod,
+ </li>
+ <li>
+Funkcja może mieć argumenty, które wchodzą do wnętrza funkcji i są tam przetwarzane np. 
+suma_kry(a, b),
+ </li>
+ <li>
+Może(nie zawsze) zwrócić obliczoną wartość zapisaną po słowie kluczowym <b>return</b>.
+ </li>
+ </ol>
+ </p>
+
+<h3><b><u>Wybrane metody obiektu document</u></b></h3>
+<table >
+<tr>
+	<td><b>metoda</b></td>
+	<td><b>opis</b></td>
+</tr>
+<tr>
+	<td>getElementById(„id”)</td>
+	<td>dostęp do wszystkich elementów o konkretnej 
+wartości atrybutu id </td>
+</tr>
+<tr>
+	<td>getElementByTagName(„znacznik”) </td>
+	<td>dostęp do wszystkich elementów o typie 
+znacznika, np. P lub DIV </td>
+</tr>
+<tr>
+	<td>getElementByName(„nazwa”) </td>
+	<td>dostęp do wszystkich elementów o konkretnej 
+wartości atrybutu</td>
+</tr>
+</table>
+<h3><b><u>Właściwości tak pobranego elementu to:</u></b></h3>
+<p>
+- <b>innerHTML</b> – umożliwia określenie kodu HTML który zostanie umieszczony w elemencie np. w 
+tabeli,<br> 
+- <b>innerText</b> – umożliwia określenie ciągu znaków który zostanie umieszczony w elemencie, <br>
+- <b>className</b> – umożliwia określenie klasy CSS użytej do prezentacji elementu.
+</p>
+<p>Przykład</p>
+<textarea cols="100%" rows="15%">
+<!DOCTYPE html> 
+ <head> 
+ <title> Przykłady dostępu do elementów </title> 
+ <meta charset="utf-8"> 
+ <style type="text/css"> 
+ .wyroznienieCzerwone { color: Red; font-weight: 600; } 
+ </style>
+ </head> 
+ <body> 
+ <div id="nazwa"></div> 
+ <script>
+ document.getElementById("nazwa").innerHTML = "Witaj"; 
+ document.getElementById("nazwa").className = "wyroznienieCzerwone"; 
+ </script> 
+</body>
+</html>
+</textarea>
+ <input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()">
+</body>
+</html>
