@@ -1,5 +1,6 @@
 <html>
 <head>
+ <title>Zadanie 13</title>
  <script type="text/javascript">
 function okno_zamknij_pedchenko() 
  {
@@ -12,6 +13,7 @@ function okno_zamknij_pedchenko()
 <script language="JavaScript">
 var a=prompt("Podaj pirwszą liczbę","A=");
 var b=prompt("Podaj drugą liczbę","B=");
+document.write("Wczytane liczby: A=",a,",   B=",b,'<br/>')
 document.write("(",a,"+",b,")^3 = ",a,"^3"," + ","3*((",a,")^2)*(",b,") + ","3*((",a,")*((",b,")^2)"," + ",b,"^3 = ",(a**3),"+",(3*((a**2)*b)),"+",(3*(a*(b**2))),"+",(b**3)," = ",(a**3)+(3*((a**2)*b))+(3*(a*(b**2)))+(b**3));
 document.write('<br/><input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()">');
 </script>
