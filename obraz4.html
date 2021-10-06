@@ -1,14 +1,15 @@
 <html>
 <head>
+<title>Zadanie 5</title>
 <script type="text/javascript">
 function show_confirm()
 {
 var r=confirm("Naciśnij klawisz");
 if (r==true)
-{ document.write("Nacisnąłeś OK!");
+{ document.write("Nacisnąłeś OK!",'<br/>','<br/>');
   document.write('<input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()">'); }
 else
-{ document.write("Nacisnąłeś Cancel!");
+{ document.write("Nacisnąłeś Cancel!",'<br/>','<br/>');
   document.write('<input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()">'); }
 }
 function okno_zamknij_pedchenko() 
@@ -19,7 +20,8 @@ function okno_zamknij_pedchenko()
 </head>
 <body>
 <input type="button" onclick="show_confirm()" value="Pokaż confirm box">
-<br/>
+<br>
+<br>
 <input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()">
 </body>
 </html>
