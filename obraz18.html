@@ -4,6 +4,10 @@
  Przykład obliczenia V i Pc walca
 </title>
  <script language="JavaScript">
+function okno_zamknij_pedchenko() 
+ {
+ window.close()
+ }
 function V(r,h)
 {
  r_liczba=parseFloat(r)
@@ -47,5 +51,6 @@ Pc=
 <tr id="pokaz1"></tr>
 <tr id="pokaz2"></tr>
 </table>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()">
 </body> 
 </html>
