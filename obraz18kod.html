@@ -33,6 +33,10 @@ function Pc(r,h)
  alert("Pc="+Pc_wynik.toFixed(2)+" cm^2");
  pokaz2.innerHTML="Pc="+Pc_wynik.toFixed(2)+"cm^2";
 }
+function okno_zamknij_pedchenko() 
+{
+ window.close()
+}
  </script>
 </head> 
 <body> 
@@ -58,6 +62,9 @@ Pc=
 <tr id="pokaz1"></tr>
 <tr id="pokaz2"></tr>
 </table>
+<form>
+ 	    <input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()">
+</form>
 </body> 
 </html>
 </textarea>
