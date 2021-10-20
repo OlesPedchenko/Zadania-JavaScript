@@ -1,0 +1,58 @@
+﻿<html> 
+<head> 
+<title>
+ Przykład obliczenia obwoda i pola prostokata
+</title>
+ <script language="JavaScript">
+function obwod_pedchenko(a_ped, b_ped)
+{
+ a_ped_liczba=parseFloat(a_ped)
+ b_ped_liczba=parseFloat(b_ped)
+ obwod_pedchenko_wynik=(a_ped_liczba+b_ped_liczba)*2
+ document.getElementsByName('obw')[0].value=obwod_pedchenko_wynik.toFixed(2); 
+ alert("Obwod="+obwod_pedchenko_wynik.toFixed(2)+" cm"); 
+ wyprowadz_obwod_ped.innerHTML="Obwod="+obwod_pedchenko_wynik.toFixed(2)+" cm"+"<br>"; 
+}
+function Pole_pedchenko(a_ped, b_ped)
+{
+ a_ped_liczba=parseFloat(a_ped)
+ b_ped_liczba=parseFloat(b_ped)
+ Pole_pedchenko_wynik=a_ped_liczba*b_ped_liczba
+ document.getElementsByName('pole')[0].value=Pole_pedchenko_wynik.toFixed(2);
+ alert("Pole="+Pole_pedchenko_wynik.toFixed(2)+" cm^2");
+ wyprowadz_pole_ped.innerHTML="Pole="+Pole_pedchenko_wynik.toFixed(2)+"cm^2";
+}
+function okno_zamknij_pedchenko() 
+{
+ window.close()
+}
+ </script>
+</head> 
+<body> 
+Pobliczanie obwoda i pola prostokata
+<br> <br>
+<form name="formularz" action="..." onsubmit="obwod_pedchenko(this.a_dana_ped.value,this.b_dana_ped.value); 
+Pole_pedchenko(this.a_dana_ped.value,this.b_dana_ped.value);return false"> 
+Podaj a=
+<input size="6" name="a_dana_ped">
+Podaj b=
+<input size="6" name="b_dana_ped">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+Obwod=
+<input size="6" name="obw">
+Pole=
+<input size="6" name="pole">
+</form>
+<table>
+<tr id="wyprowadz_obwod_ped"></tr>
+<tr id="wyprowadz_pole_ped"></tr>
+</table>
+<form>
+ 	    <input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()">
+</form>
+</body> 
+</html>

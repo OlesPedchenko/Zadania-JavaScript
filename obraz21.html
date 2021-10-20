@@ -1,0 +1,58 @@
+﻿<html> 
+<head> 
+<title>
+ Zadanie 21
+</title>
+ <script language="JavaScript">
+function dlug_pedchenko(dl_ped, al_ped)
+{
+ dl_ped_liczba=parseFloat(dl_ped)
+ al_ped_liczba=parseFloat(al_ped)
+ dlug_pedchenko_wynik=Math.sqrt((dl_ped_liczba*dl_ped_liczba)+(al_ped_liczba*al_ped_liczba)) 
+ document.getElementsByName('dl')[0].value=dlug_pedchenko_wynik.toFixed(2); 
+ alert("Drabina="+dlug_pedchenko_wynik.toFixed(2)+" m"); 
+ wyprowadz_dlugosc_ped.innerHTML="Drabina="+dlug_pedchenko_wynik.toFixed(2)+" m"+"<br>"; 
+}
+function kat_pedchenko(dl_ped, al_ped)
+{
+ dl_ped_liczba=parseFloat(dl_ped)
+ al_ped_liczba=parseFloat(al_ped)
+ kat_pedchenko_wynik=Math.atan((dl_ped_liczba/al_ped_liczba))*180/Math.PI
+ document.getElementsByName('kat')[0].value=kat_pedchenko_wynik.toFixed(2);
+ alert("Alfa="+kat_pedchenko_wynik.toFixed(2)+" [stopni]");
+ wyprowadz_kat_ped.innerHTML="Alfa="+kat_pedchenko_wynik.toFixed(2)+" [stopni]";
+}
+function okno_zamknij_pedchenko() 
+{
+ window.close()
+}
+ </script>
+</head> 
+<body> 
+Pobliczanie odległości od drabiny i kąta
+<br> <br>
+<form name="formularz" action="..." onsubmit="dlug_pedchenko(this.d_dana_ped.value,this.x_dana_ped.value); 
+kat_pedchenko(this.d_dana_ped.value,this.x_dana_ped.value);return false"> 
+Podaj d=
+<input size="6" name="d_dana_ped">
+Podaj x=
+<input size="6" name="x_dana_ped">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+Drabina=
+<input size="6" name="dl">
+Alfa=
+<input size="6" name="kat">
+</form>
+<table>
+<tr id="wyprowadz_dlugosc_ped"></tr>
+<tr id="wyprowadz_kat_ped"></tr>
+</table>
+<form>
+ 	    <input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()">
+</form>
+</body> 
+</html>

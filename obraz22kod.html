@@ -1,0 +1,80 @@
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij_pedchenko() 
+ {
+ window.close()
+ }
+</script>
+</head>
+<body>
+<textarea cols="100%" rows="28%">
+<html> 
+<head> 
+<title>
+ Zadanie 22
+</title>
+ <script language="JavaScript">
+function wys_ped(odl_ped, s_ped)
+{
+	odl_ped_liczba = parseFloat(odl_ped);
+	s_ped_liczba = parseFloat(s_ped);
+	obliczanie = ((s_ped_liczba*s_ped_liczba)-(odl_ped_liczba*odl_ped_liczba));
+	h_ped = Math.sqrt(obliczanie);
+	document.getElementsByName('h')[0].value=h_ped.toFixed(2);
+    alert("h="+h_ped.toFixed(2)+" km");
+    pokaz1.innerHTML="h="+h_ped.toFixed(2)+" km"+"<br>";
+}
+function war_kata_ped(odl_ped, s_ped)
+{
+	odl_ped_liczba = parseFloat(odl_ped);
+	s_ped_liczba = parseFloat(s_ped);
+	obliczanie = ((s_ped_liczba*s_ped_liczba)-(odl_ped_liczba*odl_ped_liczba));
+	h_ped = Math.sqrt(obliczanie);
+	h_ped_liczba = parseFloat(h_ped);
+	kat_ped = Math.asin((h_ped/s_ped_liczba)) * 180 / Math.PI;
+	document.getElementsByName('k')[0].value=kat_ped.toFixed(2);
+	alert("kąt="+kat_ped.toFixed(2)+" [stopni]");
+	pokaz2.innerHTML="kąt="+kat_ped.toFixed(2)+" [stopni]";
+}
+function okno_zamknij_pedchenko() 
+{
+ window.close()
+}
+ </script>
+</head> 
+<body> 
+Obliczanie wysokości oraz kąta startu samolotu
+<br> <br>
+<form name="formularz" action="..." onsubmit="wys_ped(this.odleglosc.value,this.droga.value); 
+war_kata_ped(this.odleglosc.value,this.droga.value);return false"> 
+Podaj odległość między Arturem i Dawidem =
+<input size="6" name="odleglosc">
+<br> <br>
+Podaj drogę, którą przebył samolot =
+<input size="6" name="droga">
+<br>
+<br>
+<input TYPE="submit" Value="oblicz" >
+<br>
+<br>
+h=
+<input size="6" name="h">
+kąt=
+<input size="6" name="k">
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table>
+<form>
+ 	    <input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()">
+</form>
+</body> 
+</html>
+
+</textarea>
+<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()">
+</body>
+</html>
