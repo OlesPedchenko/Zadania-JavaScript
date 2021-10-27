@@ -13,7 +13,7 @@ function okno_zamknij_pedchenko()
 <script language="JavaScript">
 var N0 = prompt("Podaj ilość atomów pierwiastka promieniotwórczego","N0=");
 var t = prompt("Podaj czas w latach","t=");
-var T12 = prompt("Podaj połowicznego rozpadu","T1/2=");
+var T12 = prompt("Podaj period połowicznego rozpadu","T1/2=");
 var lambda = Math.log(2)/T12;
 var N = N0 * Math.pow(Math.E, ((-1*lambda)*t));
 document.write("N0="+N0+"[sztuk]",'<br/>');
