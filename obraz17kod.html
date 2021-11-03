@@ -1,15 +1,4 @@
-<html>
-<head>
-<script type="text/javascript">
-function okno_zamknij_pedchenko() 
- {
- window.close()
- }
-</script>
-</head>
-<body>
-<textarea cols="100%" rows="28%">
-<!DOCTYPE html> 
+<html lang="pl">
  <head>
 <title> Użycie fukcji </title> 
  <meta charset="utf-8"> 
@@ -34,20 +23,15 @@ function okno_zamknij_pedchenko()
  function mnozenie_ped(a, b){
  return a * b;
  }
- function od_kwadratu_ped(a, b){
+ function do_kwadratu_ped(a, b){
  return (a+"^2="+(a * a)+'<br>'+b+"^2="+(b * b));
  }
  function reszta_z_dzielenia_a_przez_b_ped(a, b){
  return a % b;
  }
- document.write("suma="+suma_ped(a,b)+"<br>"+"mnożenie="+mnozenie_ped(a, b)+"<br>"+"od kwadratu:"+'<br>'+od_kwadratu_ped(a, b)+"<br>"+"reszta z dzielenia a przez b="+reszta_z_dzielenia_a_przez_b_ped(a,b)+"<br>");
+ document.write("suma="+suma_ped(a,b)+"<br>"+"mnożenie="+mnozenie_ped(a, b)+"<br>"+"do kwadratu:"+'<br>'+do_kwadratu_ped(a, b)+"<br>"+"reszta z dzielenia a przez b="+reszta_z_dzielenia_a_przez_b_ped(a,b)+"<br>");
  document.write('<br/><input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()">');
 </script>
 </div>
-</body>
-</html>
-</textarea>
-<br>
-<input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()">
 </body>
 </html>
