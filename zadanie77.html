@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>
+ Przykład petli
+</title>
+ <script language="JavaScript">
+ function okno_zamknij_pedchenko() 
+ {
+ window.close()
+ }
+ for ( var i=1; i<=10; i++)
+ {
+ for ( var k=1; k<=i; k++)
+ {
+ document.write("&nbsp");
+ }
+ document.write(i+"<br>");
+ }
+ document.write('<br><input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()">');
+
+</script>
+</head>
+<body>
+</body>
+</html>

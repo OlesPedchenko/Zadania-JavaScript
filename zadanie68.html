@@ -1,0 +1,30 @@
+<html lang="pl">
+<body>
+<div style="color:red;font-size:40px;">
+<script language="JavaScript">
+function okno_zamknij_pedchenko() 
+{
+window.close()
+}
+var l=prompt("Wpisz liczbe","");
+var liczba=parseFloat(l)
+if (liczba%2==0)
+{
+	for(Ile_razy_wyświetlić = 1; Ile_razy_wyświetlić < 12; Ile_razy_wyświetlić++)
+	{
+			document.write('<span style="font-size:40; color:blue"> Pedchenko</span><br>');
+	}
+}
+else
+{
+	for(Ile_razy_wyświetlić = 1; Ile_razy_wyświetlić < 12; Ile_razy_wyświetlić++)
+	{
+			document.write('<span style="font-size:40; color:green"> Oles</span><br>');
+	}
+}
+document.write('<input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()">');
+
+</script>
+</div>
+</body>
+</html>

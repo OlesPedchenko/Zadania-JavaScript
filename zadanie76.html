@@ -1,0 +1,35 @@
+<html lang="pl">
+<head>
+<script type="text/javascript">
+function okno_zamknij_pedchenko() 
+ {
+ window.close()
+ }
+</script>
+</head>
+<body>
+<div>
+<script language="JavaScript">
+l1 = prompt("Wpisz liczbę", "");
+l2 = prompt("Wpisz liczbę", "");
+if (l1 < l2){
+	for(l1; l1 <= l2; l1++){
+		if(l1%2!=0)
+			document.write("<span style='color:green;font-size:40px;'>"+l1+"</span>"+"<br>");
+	}
+}
+else if (l1 > l2){
+	for(l1; l1 >= l2; l1--){
+		if(l1%2!=0)
+			document.write("<span style='color:blue;font-size:20px;'>"+l1+"</span>"+"<br>");
+	}
+}
+else{
+	confirm("Liczby są sobie równe");
+}
+document.write('<br><input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()">');
+
+</script>
+</div>
+</body>
+</html>

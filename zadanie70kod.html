@@ -1,0 +1,56 @@
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij_pedchenko() 
+ {
+ window.close()
+ }
+</script>
+</head>
+<body>
+<textarea cols="100%" rows="28%">
+<html lang="pl">
+<head><title>Zadanie 70</title></head>
+<body>
+<div>
+<script language="JavaScript">
+var a=prompt("Podaj a=","");
+var b=prompt("Podaj b=","");
+var a=parseFloat(a);
+var b=parseFloat(b);
+function okno_zamknij_pedchenko() 
+{
+window.close()
+};
+for(i = 1; i <= b; i++)
+{
+	document.write("*");
+};
+document.write('<br>');
+for(i = 1; i <= a; i++)
+{
+	document.write("*");
+	
+	for(j = 1; j < b-1; j++)
+	{
+	document.write("<span style='opacity: 0.0'>*</span>");
+	};
+	
+	document.write("*", "<br>");
+};
+for(i = 1; i <= b; i++)
+{
+	document.write("*");
+};
+document.write('<br><input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()">');
+
+</script>
+</div>
+</body>
+</html>
+
+</textarea>
+<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()">
+</body>
+</html>

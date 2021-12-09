@@ -1,0 +1,23 @@
+<html lang="pl">
+<head>
+<script type="text/javascript">
+function okno_zamknij_pedchenko() 
+ {
+ window.close()
+ }
+</script>
+</head>
+<body>
+<div style="color:green;font-size:41px;">
+<script language="JavaScript">
+var a = prompt("Wpisz liczbę", "");
+for(var i = 2; i <= a; i++){
+	if(i%2==0)
+		document.write(i+"<br>");
+}
+document.write('<br><input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()">');
+
+</script>
+</div>
+</body>
+</html>

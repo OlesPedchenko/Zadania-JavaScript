@@ -1,0 +1,56 @@
+<html lang="pl">
+<body>
+<div style="color:red;font-size:40px;">
+<script language="JavaScript">
+function okno_zamknij_pedchenko() 
+{
+window.close()
+}
+var l1_t_ped;
+var l2_t_ped;
+do{
+l1_t_ped = prompt("Wpisz liczbę z przedziału <20, 60>", "");
+l2_t_ped = prompt("Wpisz liczbę z przedziału <20, 60>", "");
+if (l1_t_ped < 20 || l1_t_ped > 60)
+{
+	alert("Wczytana liczba l1 nie jest z przedziału <20, 60>");
+	continue;
+}
+else if(l2_t_ped > 60 || l2_t_ped < 20)
+{
+	alert("Wczytana liczba l2 nie jest z przedziału <20, 60>");
+	continue;
+}
+
+}while(l1_t_ped < 20 || l2_t_ped < 20 || l1_t_ped > 60 || l2_t_ped > 60);
+var pocz_ped = prompt("Wpisz początkową wielkość tekstu", "");
+pocz_ped = parseFloat(pocz_ped);
+l1_t_ped = parseFloat(l1_t_ped);
+l2_t_ped = parseFloat(l2_t_ped);
+
+var text_ped = prompt("Wpisz tekst", "");
+
+if (l1_t_ped < l2_t_ped)
+{
+	for(pocz_ped; pocz_ped < 101; pocz_ped+=5)
+	{
+		document.write("<p style=\"font-size:"+pocz_ped+"px; color: black;\"><br>"+text_ped+"<br></p>");
+	}
+}
+else if (l2_t_ped < l1_t_ped)
+{
+	for(pocz_ped; pocz_ped > 0; pocz_ped-=5)
+	{
+		document.write("<p style=\"font-size:"+pocz_ped+"px; color: black;\"><br>"+text_ped+"<br></p>");
+	}
+}
+else
+{
+	document.write("Liczby są sobie równe");
+}
+document.write('<br><input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()">');
+
+</script>
+</div>
+</body>
+</html>

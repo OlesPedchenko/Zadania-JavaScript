@@ -1,0 +1,30 @@
+<html lang="pl">
+<head>
+<script type="text/javascript">
+function okno_zamknij_pedchenko() 
+ {
+ window.close()
+ }
+</script>
+</head>
+<body>
+<div style="color:green;font-size:41px;">
+<script language="JavaScript">
+var l = 0;
+for(i = 19;i < 34;i++){
+	document.write("I="+i+"&nbsp&nbsp&nbsp pierw_2("+i+")="+Math.sqrt(i).toFixed(2)+"&nbsp&nbsp&nbsp pierw_4("+i+")="+Math.sqrt(Math.sqrt(i)).toFixed(2)+"<br>");
+	l++;
+
+	if(l%3==0){
+		if(confirm("Aby kontynuować, naciśnij dowolny klawisz")==true)
+			continue;
+		else
+			break;
+	}
+}
+document.write('<br><input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()">');
+
+</script>
+</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<html lang="pl">
+<head><title>Zadanie 71</title></head>
+<body>
+<div>
+<script language="JavaScript">
+var b2=prompt("Podaj imię=","");
+var a2=prompt("Podaj nazwisko=","");
+var a1= a2.length;
+var a = parseFloat(a1);
+var b1 = b2.length;
+var b= parseFloat(b1);
+a = (a%4)+5;
+b = (b%6)+20;
+function okno_zamknij_pedchenko() 
+{
+window.close()
+};
+for(i = 1; i <= b; i++)
+{
+	document.write("*");
+};
+document.write('<br>');
+for(i = 1; i <= a; i++)
+{
+	document.write("*");
+	
+	for(j = 1; j < b-1; j++)
+	{
+	document.write("<span style='opacity: 0.0'>*</span>");
+	};
+	
+	document.write("*", "<br>");
+};
+for(i = 1; i <= b; i++)
+{
+	document.write("*");
+};
+document.write('<br><input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()">');
+
+</script>
+</div>
+</body>
+</html>

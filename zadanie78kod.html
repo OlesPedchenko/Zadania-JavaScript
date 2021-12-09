@@ -1,0 +1,100 @@
+<html>
+<head>
+<script type="text/javascript">
+function okno_zamknij_pedchenko() 
+ {
+ window.close()
+ }
+</script>
+</head>
+<body>
+<textarea cols="100%" rows="28%">
+<html lang = "pl">
+<head>
+<style>
+table, th, td {
+	 border: 0.5px solid black;
+	 border-collapse: collapse;
+	 }
+</style>
+<script language="JavaScript">
+var licznik_ped = 0;
+for(var i = -Math.round(2.01)-1; i <= Math.round(2.01)+1; i++)
+{
+	for(var j = -Math.round(2.01)-1; j <= Math.round(2.01)+1; j++)
+	{
+	d= Math.sqrt(i*i+j*j);
+	if(d <= 2.01){licznik_ped++};
+	}
+};
+licznik_ped = 0;
+for(var i = -Math.round(4.50)-1; i <= Math.round(4.50)+1; i++)
+{
+	for(var j = -Math.round(4.50)-1; j <= Math.round(4.50)+1; j++)
+	{
+	d= Math.sqrt(i*i+j*j);
+	if(d <= 4.50){licznik_ped++};
+	}
+};
+licznik_ped = 0;
+for(var i = -119; i <= 119; i++)
+{
+	for(var j = -119; j <= 119; j++)
+	{
+	d= Math.sqrt(i*i+j*j);
+	if(d <= 119){licznik_ped++};
+	}
+};
+ function okno_zamknij_pedchenko() 
+ {
+ window.close()
+ }
+/*licznik_ped = 0;
+for(var i = -Math.round(1019)-1; i <= Math.round(1019)+1; i++)
+{
+	for(var j = -Math.round(1019)-1; j <= Math.round(1019)+1; j++)
+	{
+	d= Math.sqrt(i*i+j*j);
+	document.write("d="+d+"<br>");
+	document.write("("+i + " , " + j+")"+"   ");
+	if(d <= 1019){licznik_ped++};
+	}
+	document.write("<br>");
+}
+document.write("Licznik = " + licznik_ped + "<br>");*/
+</script>
+</head>
+<body>
+<table style="text-align: center;">
+<tr>
+<td>Promień koła R</td>
+<td>Liczba punktów kratowych N(R)</td>
+</tr>
+<tr>
+<td>2,01</td>
+<td>13</td>
+</tr>
+<tr>
+<td>4,50</td>
+<td>69</td>
+</tr>
+<tr>
+<td>119</td>
+<td>44469</td>
+</tr>
+<tr>
+<td>1019</td>
+<td>3262077</td>
+</tr>
+</table>
+<script language="JavaScript">
+ document.write('<br><input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()">');
+</script>
+</body>
+</html>
+
+</textarea>
+<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_pedchenko()">
+</body>
+</html>
